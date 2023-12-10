@@ -1,0 +1,123 @@
+body {
+  background: black;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.header > li {
+  display: inline-block;
+  margin-right: 10px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+  letter-spacing: 1.5px;
+}
+
+li::after {
+  content: "";
+  display: block;
+  opacity: 0;
+  height: 3px;
+  background: white;
+  transform: translate(-100%);
+  transition: all 0.5s ease-in-out;
+}
+
+.head1:hover::after {
+  background: #ff4d4d;
+  opacity: 1;
+  transform: translate(0);
+}
+
+.head1:hover {
+  color: #ff4d4d;
+}
+
+.head2:hover::after {
+  background: #ffff66;
+  opacity: 1;
+  transform: translate(0);
+}
+
+.head2:hover {
+  color: #ffff66;
+}
+
+.head3:hover::after {
+  background: #4da6ff;
+  opacity: 1;
+  transform: translate(0);
+}
+
+.head3:hover {
+  color: #4da6ff;
+}
+
+.head4:hover::after {
+  background: #ffdfba;
+  opacity: 1;
+  transform: translate(0);
+}
+
+.head4:hover {
+  color: #ffdfba;
+}
+
+.head5:hover::after,
+.head6:hover::after {
+  background: #e620b4;
+  opacity: 1;
+  transform: translate(0);
+}
+
+.head5:hover,
+.head6:hover {
+  color: #e620b4;
+}
+
+.search-menu,
+.search-menu2 {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.search-menu input,
+.search-menu2 input {
+  width: 80%;
+  padding: 5px;
+  margin-right: 5px;
+  background: linear-gradient(to right, #000000, #4D4855);
+  color: red;
+  font-weight: bold;
+}
+
+.search-menu button,
+.search-menu2 button {
+  padding: 5px 10px;
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
